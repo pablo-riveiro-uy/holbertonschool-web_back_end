@@ -5,4 +5,5 @@ import math
 
 
 def floor(n: float) -> int:
+    """ floor fora float number with annotation """
     return math.floor(n)

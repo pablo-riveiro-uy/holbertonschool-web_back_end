@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" asynchronous coroutine waits random time and return that time """
+""" wait for a waiting  function n times """
 
 import asyncio
 from typing import List
@@ -7,7 +7,8 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
+    """ wait for a waiting  function n times """
     values_lsit: List[float] = []
     for x in range(n):
         values_lsit.append(await wait_random(max_delay))
-    return values_lsit
+    return sorted(values_lsit)

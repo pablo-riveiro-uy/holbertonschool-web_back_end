@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """ collect a list of numbers asynchronously geenerated """
-import asyncio
 from typing import List
 import typing
 async_generator = __import__('0-async_generator').async_generator

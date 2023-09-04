@@ -1,0 +1,4 @@
+// list all collection that matches
+
+db.school.find({name: { $all: ["Holberton school"]}})
+

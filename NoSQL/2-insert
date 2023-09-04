@@ -1,4 +1,5 @@
 // insert a document in a db
 
+db.my_db.insertOne(school)
 db.my_db.insert(school={"name": "Holberton school"})
 

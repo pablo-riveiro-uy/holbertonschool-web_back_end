@@ -16,7 +16,7 @@ if __name__ == "__main__":
     print("Methods:")
 
     for m in method:
-        print('\tMethod {}: {}'.format(
+        print('\tmethod {}: {}'.format(
             m, log_collection.count_documents({"method": m})))
 
     print("{} status check".format(log_collection.count_documents(

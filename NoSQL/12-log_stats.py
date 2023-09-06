@@ -13,7 +13,7 @@ if __name__ == "__main__":
     method = ["GET", "POST", "PUT", "PATCH", "DELETE"]
 
     print("{} logs".format(log_collection.count_documents({})))
-    print("Methos:")
+    print("Methods:")
 
     for m in method:
         print('\tMethod {}: {}'.format(

@@ -49,11 +49,10 @@ class Server:
         page_lenght = len(self.get_page(page, page_size))
 
         """cheking next page """
-        next_page = None
-        next = page + 1
-        next_list = self.get_page(next, page_size)
-        if next_list is not None:
-            next_page = next
+        if page > len(self.__dataset):
+            next_page = None
+        else:
+            next_page = page + 1
 
         """cheking next page """
         if page < 2:

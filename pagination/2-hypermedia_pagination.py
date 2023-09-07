@@ -46,10 +46,8 @@ class Server:
     def get_hyper(self, page: int = 1, page_size: int = 10) -> List[List]:
         """ return a dictionary with selected values """
 
-        page_lenght = len(self.get_page(page, page_size))
-
         """cheking next page """
-        if page > len(self.dataset()):
+        if page +1  > len(self.dataset()):
             next_page = None
         else:
             next_page = page + 1

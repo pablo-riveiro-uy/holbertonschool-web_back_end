@@ -47,7 +47,7 @@ class Server:
         """ return a dictionary with selected values """
 
         """cheking next page """
-        if page +1  > len(self.dataset()):
+        if page + 1 > len(self.dataset()):
             next_page = None
         else:
             next_page = page + 1

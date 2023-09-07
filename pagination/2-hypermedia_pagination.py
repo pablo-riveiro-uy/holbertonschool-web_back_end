@@ -49,21 +49,21 @@ class Server:
         page_lenght = len(self.get_page(page, page_size))
 
         """cheking next page """
-        if page > len(self.__dataset):
+        if page > len(self.dataset()):
             next_page = None
         else:
             next_page = page + 1
 
         """cheking next page """
-        if page < 2:
+        if page - 1 < 1:
             prev_page = None
         else:
             prev_page = page - 1
 
-        return ({'page_size': page_lenght,
+        return ({'page_size': page_size,
                 'page': page,
                  'data': self.get_page(page, page_size),
                  'next_page': next_page,
                  'prev_page': prev_page,
-                 'total_pages': len(self.__dataset)
+                 'total_pages': len(self.dataset())
                  })

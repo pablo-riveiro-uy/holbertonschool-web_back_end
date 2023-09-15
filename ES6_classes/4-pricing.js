@@ -17,12 +17,12 @@ export default class Pricing {
 
   // Setters
 
-  set setAmount(newAmount) {
+  setAmount(newAmount) {
+    if (typeof newAmount !== 'number') throw TypeError('Amount must be a number');
     this._amount = newAmount;
   }
 
-  set setCurrency(newCurrency) {
-    if (typeof newCurrency !== 'number') throw TypeError('Amount must be a number');
+  setCurrency(newCurrency) {
     this._amount = newCurrency;
   }
 

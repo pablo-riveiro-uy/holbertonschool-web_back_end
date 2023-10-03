@@ -4,8 +4,9 @@ export default function handleResponseFromAPI(promise) {
       resolve({ status: 200, body: 'success' });
     }
     const newError = new Error();
-    if (promise === newError) {
+    if (typeof (promise) === typeof (newError)) {
       reject(Object.create(Error.prototype));
     }
+    if (typeof (promise) === typeof (newError)) { return new Error(); } return new Error();
   }).finally(console.log('Got a response from the API'));
 }

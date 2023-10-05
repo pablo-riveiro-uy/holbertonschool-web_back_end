@@ -1,12 +1,6 @@
 export default function divideFunction(numerator, denominator) {
-  let result;
-  try {
-    result = numerator / denominator;
-    throw (
-      new Error('cannot divide by 0')
-    );
-  } catch (err) {
-    console.error(err);
+  if (denominator === 0) {
+    throw new Error('cannot divide by 0');
   }
-  return result;
+  return numerator / denominator;
 }

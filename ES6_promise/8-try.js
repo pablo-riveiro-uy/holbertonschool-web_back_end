@@ -1,7 +1,7 @@
 export default function divideFunction(numerator, denominator) {
-  let result = 0;
+  let result;
   try {
-    if (denominator !== 0) result = numerator / denominator;
+    result = numerator / denominator;
     throw (
       new Error('cannot divide by 0')
     );

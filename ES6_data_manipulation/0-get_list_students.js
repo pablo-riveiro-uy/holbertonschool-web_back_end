@@ -1,34 +1,34 @@
 export default function getListStudents() {
   const result = [];
   const obj1 = {
-    FirstName: 'Guillaume',
+    firstName: 'Guillaume',
     id: 1,
     location: 'San Francisco',
   };
   const obj2 = {
-    FirstName: 'James',
+    firstName: 'James',
     id: 2,
     location: 'Columbia',
   };
   const obj3 = {
-    FirstName: 'Serena',
+    firstName: 'Serena',
     id: 5,
     location: 'San Francisco',
   };
 
   result.push({
     id: obj1.id,
-    FirstName: obj1.FirstName,
+    firstName: obj1.firstName,
     location: obj1.location,
   });
   result.push({
     id: obj2.id,
-    FirstName: obj2.FirstName,
+    firstName: obj2.firstName,
     location: obj2.location,
   });
   result.push({
     id: obj3.id,
-    FirstName: obj3.FirstName,
+    firstName: obj3.firstName,
     location: obj3.location,
   });
 

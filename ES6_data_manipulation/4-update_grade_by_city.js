@@ -12,7 +12,7 @@ export default function updateStudentGradeByCity(getListStudents, city, newGrade
 
     return ({
       id: obj.id,
-      FileReader: obj.firstName,
+      FirstName: obj.firstName,
       location: obj.location,
       grade: typeof stuGrade === 'object' ? stuGrade.grade : 'N/A',
     });
